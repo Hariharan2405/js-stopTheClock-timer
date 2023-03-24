@@ -1,0 +1,28 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Stop Clock</title>
+	
+	
+	</head>
+	
+	<body>
+		
+		<p id="clock"></p>
+		<button onclick="clearInterval(x);">Stop</button>
+	
+		<script>
+				function clock(){
+					var clock=new Date();
+					document.getElementById("clock").innerHTML=clock.toLocaleTimeString();
+				}
+				var x=setInterval(clock,1000)
+				
+			
+		</script>
+	</body>
+</html>
